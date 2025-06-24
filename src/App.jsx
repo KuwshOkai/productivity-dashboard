@@ -9,9 +9,9 @@ import Tasks from './pages/Tasks'
 function App() {
   return (
     <Router>
-      <div className='flex'>
+      <div className='flex min-h-screen w-full'>
         <Sidebar />
-        <main className='flex-1 bg-gray-100 min-h-screen'>
+        <main className='flex-1 bg-gray-100 overflow-y-auto'>
           <Routes>
             <Route path='/' element={<Navigate to='/tasks' />} />
             <Route path='/tasks' element={<Tasks />} />
